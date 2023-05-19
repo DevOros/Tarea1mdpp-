@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tarea 1: forms</title>
+  </head>
+  <body>
+    <div id="celeste" style="background-color: aqua; height: 40vh; width: 100">
+      <h1>Te damos la bienvenida!</h1>
+    </div>
+    <h2>
+      Completá el siguiente formulario para inscribirte Mar del Plata Programa
+    </h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required />
+      <br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <br />
+
+      <label for="documento">Documento:</label>
+      <input type="text" placeholder="tipo" />
+      <input type="text" id="documento" placeholder="numero" name="documento" />
+      <br />
+      <label for="documento">Foto del documento:</label>
+      <input type="file" /><br />
+
+      <label>Fecha de nacimiento</label>
+      <input
+        type="date"
+        value="Indicar Fecha"
+        min="1950-01-01"
+        max="2023-12-25"
+      /><br />
+
+      Seleccione su género:
+      <select name="pais">
+        <option value="1">Hombre</option>
+        <option value="2">Mujer</option>
+        <option value="2">Otro</option>
+        <input type="text" placeholder="especifique" />
+      </select>
+
+      <br />
+
+      <label for="trabajo">¿Trabaja?</label>
+      <input type="radio" id="trabajo-si" name="trabajo" value="trabajo-si" />
+      <label for="trabajo-si">Si.</label>
+      <input type="radio" id="trabajo-no" name="trabajo" value="trabajo-no" />
+      <label for="trabajo-no">No.</label>
+
+      <label for="Estudia">¿Estudia?</label>
+      <input type="radio" id="estudio-si" name="estudio" value="estudio-si" />
+      <label for="estudio-si">Si.</label>
+      <input type="radio" id="estudio-no" name="estudio" value="estudio-no" />
+      <label for="estudio-no">No.</label><br />
+
+      <input type="submit" value="Enviar" />
+      <button type="Reset">Reset</button><br />
+    </form>
+    <br />
+    <br />
+    <div id="celeste" style="background-color: aqua; height: 15vh; width: 100">
+      <a href="mailto:mdpp@consultas.com">Correo</a>
+      <a href="www.mdpprograma.com">MDP Programa</a>
+    </div>
+  </body>
+</html>
